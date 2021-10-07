@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1" > -->
+    <title>Lunch checker</title>
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <div class="app" ng-app="LunchCheck" ng-controller="LunchCheckController">
+
+        <h1>Lunch checker</h1>
+        <label for="meals">Hey, what're you having for lunch?</label>
+        <textarea id="meals" ng-model="meals" color-code="{{colorCode}}" autofocus></textarea>
+        <!-- empty items are not considered -->
+        <button ng-click="displayMealsCheckerResult()">Check If Too Much</button>
+        <p class="meals-result" color-code="{{colorCode}}">{{mealsCheckerResult}}</p>
+
+    </div>
+
+
+  </body>
+</html>

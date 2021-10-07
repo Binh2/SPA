@@ -1,0 +1,41 @@
+body {
+  background-color: hsl(122, 8%, 24%);
+}
+
+textarea {
+  display: block;
+  background-color: gray;
+  margin-top: 2px;
+  width: 80%;
+  height: 100px;
+}
+
+* {
+  color: white;
+}
+
+.app {
+  box-sizing: border-box;
+  margin: 10vh auto auto;
+  width: 50vh;
+  background-color: black;
+  padding: 1px 4vh 10px;
+  border-radius: 10px;
+}
+
+button {
+  background: green;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.meal-result[color-code="1"], .meal-result[color-code="2"] {
+  color: green;
+}
+
+.meal-result[color-code="3"] {
+  color: red;
+}
