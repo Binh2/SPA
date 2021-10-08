@@ -2,14 +2,6 @@ body {
   background-color: hsl(122, 8%, 24%);
 }
 
-textarea {
-  display: block;
-  background-color: gray;
-  margin-top: 2px;
-  width: 80%;
-  height: 100px;
-}
-
 * {
   color: white;
 }
@@ -32,10 +24,14 @@ button {
   border-radius: 5px;
 }
 
-.meal-result[color-code="1"], .meal-result[color-code="2"] {
-  color: green;
+textarea {
+  display: block;
+  background-color: #777777;
+  margin-top: 2px;
+  width: 80%;
+  height: 100px;
 }
 
-.meal-result[color-code="3"] {
-  color: red;
+textarea {
+
 }

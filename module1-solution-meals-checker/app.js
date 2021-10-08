@@ -17,15 +17,12 @@ function mealsCheckerController($scope) {
         itemsCount++;
 
     if (itemsCount == 0) {
-      $scope.colorCode = 1;
       result = 'Please enter data first';
     }
     else if (itemsCount <= 3) {
-      $scope.colorCode = 2;
       result = 'Enjoy!';
     }
     else {
-      $scope.colorCode = 3;
       result = 'Too much!';
     }
 
